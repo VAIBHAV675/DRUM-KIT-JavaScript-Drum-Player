@@ -43,7 +43,7 @@ document.addEventListener("keydown", function(event) {
 function buttonAnimation(info)
 {
     let classname="."+info;
-    document.querySelector("classname").classList.add("pressed");
+    document.querySelector(classname).classList.add("pressed");
     setTimeout(function () {
            document.querySelector(classname).classList.add("pressed");}, 100); 
 }
