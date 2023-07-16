@@ -32,9 +32,19 @@ for(let i=0;i<numberOfButtons;i++)
 {
     document.querySelectorAll("button")[i].addEventListener("click",function() {
         keysound(this.innerHTML);
+        buttonAnimation(this.innerHTML);
     });
 }
 document.addEventListener("keydown", function(event) {
     keysound(event.key);
+    buttonAnimation(event.key);
     });
+
+function buttonAnimation(info)
+{
+    let classname="."+info;
+    document.querySelector("classname").classList.add(".pressed");
+    setTimeout(function () {
+           document.querySelector("classname").classList.add(".pressed");}, 100); 
+}
 
