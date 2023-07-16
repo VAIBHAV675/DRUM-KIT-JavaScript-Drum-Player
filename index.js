@@ -45,6 +45,6 @@ function buttonAnimation(info)
     let classname="."+info;
     document.querySelector(classname).classList.add("pressed");
     setTimeout(function () {
-           document.querySelector(classname).classList.add("pressed");}, 100); 
+           document.querySelector(classname).classList.remove("pressed");}, 100); 
 }
 
